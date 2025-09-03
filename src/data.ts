@@ -138,7 +138,7 @@ export const products: Product[] = [
     price: 49.99,
     discount: 15,
     image:
-      "https://images.unsplash.com/photo-1609592807905-4b0b82b3ea1d?w=300&h=200&fit=crop",
+      "https://images.unsplash.com/photo-1609592807905-4b0b82b3ea1d?w=400&h=300&fit=crop&auto=format&q=80",
     quantity: 25,
   },
   {
@@ -171,7 +171,7 @@ export const products: Product[] = [
     price: 179.99,
     discount: 25,
     image:
-      "https://images.unsplash.com/photo-1597872200964-2b65d56bd16b?w=300&h=200&fit=crop",
+      "https://images.unsplash.com/photo-1597872200964-2b65d56bd16b?w=400&h=300&fit=crop&auto=format&q=80",
     quantity: 9,
   },
   {

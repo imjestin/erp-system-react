@@ -10,6 +10,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }) => {
   const discountedPrice = product.price * (1 - product.discount / 100);
   const isOutOfStock = product.quantity === 0;
 
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    const target = e.target as HTMLImageElement;
+    target.src = `https://via.placeholder.com/400x300/f3f4f6/6b7280?text=${encodeURIComponent(product.title)}`;
+  };
+
   return (
     <div
       className={`bg-white/80 backdrop-blur-sm rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 ${
@@ -20,6 +25,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }) => {
           src={product.image}
           alt={product.title}
           className="w-full h-32 sm:h-36 object-cover"
+          onError={handleImageError}
+          loading="lazy"
         />
         {isOutOfStock && (
           <div className="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center">
