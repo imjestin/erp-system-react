@@ -1,6 +1,6 @@
 import React from "react";
 import { CartItem as CartItemType } from "../types";
-import { FiTrash2 } from "react-icons/fi";
+import { TrashIcon } from "@heroicons/react/24/outline";
 
 interface CartItemProps {
   item: CartItemType;
@@ -67,7 +67,7 @@ const CartItem: React.FC<CartItemProps> = ({
         <button
           onClick={() => onRemove(item.product.id)}
           className="ml-3 p-2 text-slate-400 hover:text-red-500 hover:bg-red-50 rounded-lg transition-all duration-200">
-          <FiTrash2 className="w-4 h-4" />
+          <TrashIcon className="w-4 h-4" />
         </button>
       </div>
     </div>
