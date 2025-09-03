@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/erp-system-react/static/css/main.5bb668a2.css",
-    "main.js": "/erp-system-react/static/js/main.25c71fcd.js",
+    "main.js": "/erp-system-react/static/js/main.593139d2.js",
     "index.html": "/erp-system-react/index.html",
     "main.5bb668a2.css.map": "/erp-system-react/static/css/main.5bb668a2.css.map",
-    "main.25c71fcd.js.map": "/erp-system-react/static/js/main.25c71fcd.js.map"
+    "main.593139d2.js.map": "/erp-system-react/static/js/main.593139d2.js.map"
   },
   "entrypoints": [
     "static/css/main.5bb668a2.css",
-    "static/js/main.25c71fcd.js"
+    "static/js/main.593139d2.js"
   ]
 }
