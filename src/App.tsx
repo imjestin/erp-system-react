@@ -210,10 +210,17 @@ const App: React.FC = () => {
           </div>
 
           {isCartOpen && (
-            <div className="xl:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-40" onClick={toggleCart}></div>
+            <div
+              className="xl:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
+              onClick={toggleCart}></div>
           )}
-          
-          <div className={`xl:col-span-1 ${isCartOpen ? 'block fixed inset-y-0 right-0 w-full max-w-sm bg-white shadow-2xl z-50 xl:relative xl:inset-auto xl:w-auto xl:max-w-none xl:bg-transparent xl:shadow-none' : 'hidden xl:block'}`}>
+
+          <div
+            className={`xl:col-span-1 ${
+              isCartOpen
+                ? "block fixed inset-y-0 right-0 w-full max-w-sm bg-white shadow-2xl z-50 xl:relative xl:inset-auto xl:w-auto xl:max-w-none xl:bg-transparent xl:shadow-none"
+                : "hidden xl:block"
+            }`}>
             <div className="sticky top-24 xl:top-24">
               <Cart
                 cart={cart}

@@ -1,6 +1,7 @@
 import React from "react";
 import { Product } from "../types";
 import ProductCard from "./ProductCard";
+import { FiSearch, FiX } from "react-icons/fi";
 
 interface ProductListProps {
   products: Product[];
@@ -22,18 +23,7 @@ const ProductList: React.FC<ProductListProps> = ({
         <p className="text-slate-600 mb-6">Discover our latest collection</p>
         <div className="relative">
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-            <svg
-              className="h-5 w-5 text-slate-400"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
+            <FiSearch className="h-5 w-5 text-slate-400" />
           </div>
           <input
             type="text"
@@ -46,18 +36,7 @@ const ProductList: React.FC<ProductListProps> = ({
             <button
               onClick={() => onSearchChange("")}
               className="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-slate-600">
-              <svg
-                className="h-5 w-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
+              <FiX className="h-5 w-5" />
             </button>
           )}
         </div>
@@ -84,18 +63,7 @@ const ProductList: React.FC<ProductListProps> = ({
       ) : (
         <div className="text-center py-12">
           <div className="w-16 h-16 bg-slate-100 rounded-2xl mx-auto mb-4 flex items-center justify-center">
-            <svg
-              className="w-8 h-8 text-slate-400"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
+            <FiSearch className="w-8 h-8 text-slate-400" />
           </div>
           <p className="text-slate-600 font-medium mb-1">No products found</p>
           <p className="text-slate-500 text-sm">

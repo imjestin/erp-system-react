@@ -1,5 +1,6 @@
 import React from "react";
 import { CartItem as CartItemType } from "../types";
+import { FiShoppingCart } from "react-icons/fi";
 
 interface FloatingCartButtonProps {
   cart: CartItemType[];
@@ -15,18 +16,7 @@ const FloatingCartButton: React.FC<FloatingCartButtonProps> = ({ cart, onClick }
       className="fixed bottom-6 right-6 z-50 bg-gradient-to-r from-blue-500 to-purple-600 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-110 active:scale-95 group"
       aria-label="Open cart">
       <div className="relative">
-        <svg
-          className="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5 5m6-5v6a2 2 0 01-2 2H9a2 2 0 01-2-2v-6m8 0V9a2 2 0 00-2-2H9a2 2 0 00-2 2v4.01"
-          />
-        </svg>
+        <FiShoppingCart className="w-6 h-6" />
         
         {totalItems > 0 && (
           <div className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center animate-pulse">
