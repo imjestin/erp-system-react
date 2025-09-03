@@ -12,7 +12,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }) => {
 
   const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
     const target = e.target as HTMLImageElement;
-    target.src = `https://via.placeholder.com/400x300/f3f4f6/6b7280?text=${encodeURIComponent(product.title)}`;
+    target.src = `https://via.placeholder.com/400x300/f3f4f6/6b7280?text=${encodeURIComponent(
+      product.title
+    )}`;
   };
 
   return (

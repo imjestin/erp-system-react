@@ -128,20 +128,25 @@ To update your live site after making changes:
 ### Common Issues
 
 **Issue**: Site shows 404 error
+
 - **Solution**: Ensure GitHub Pages is enabled and pointing to the `gh-pages` branch
 
 **Issue**: Assets not loading
+
 - **Solution**: Check that the `homepage` field in `package.json` matches your repository URL
 
 **Issue**: Build fails
+
 - **Solution**: Run `npm run build` locally to check for errors before deploying
 
 **Issue**: Changes not reflected
+
 - **Solution**: Wait a few minutes for GitHub Pages to update, or check the Actions tab for deployment status
 
 ### Build Optimization
 
 The deployment process automatically:
+
 - ✅ Creates optimized production build
 - ✅ Minifies JavaScript and CSS
 - ✅ Compresses assets
@@ -150,6 +155,7 @@ The deployment process automatically:
 ## 📊 Deployment Status
 
 Check deployment status:
+
 - **GitHub Actions**: Go to Actions tab in your repository
 - **GitHub Pages**: Go to Settings > Pages to see deployment status
 - **Live Site**: Visit your GitHub Pages URL
